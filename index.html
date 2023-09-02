@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Editor Code</title>
+    <!-- Start Theme CodeMirror -->
+    <link rel="stylesheet" href="./assets/codemirror/lib/codemirror.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/3024-day.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/3024-night.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/abbott.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/abcdef.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/ambiance.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/codemirror/theme/ambiance-mobile.css"
+    />
+    <link rel="stylesheet" href="./assets/codemirror/theme/ayu-dark.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/ayu-mirage.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/base16-dark.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/base16-light.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/bespin.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/blackboard.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/cobalt.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/colorforth.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/darcula.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/dracula.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/duotone-dark.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/duotone-light.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/eclipse.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/elegant.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/erlang-dark.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/gruvbox-dark.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/hopscotch.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/icecoder.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/idea.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/isotope.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/lesser-dark.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/liquibyte.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/lucario.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/material.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/codemirror/theme/material-darker.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/codemirror/theme/material-ocean.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/codemirror/theme/material-palenight.css"
+    />
+    <link rel="stylesheet" href="./assets/codemirror/theme/mbo.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/mdn-like.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/midnight.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/monokai.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/moxer.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/neat.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/neo.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/night.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/nord.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/oceanic-next.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/panda-syntax.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/paraiso-dark.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/paraiso-light.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/codemirror/theme/pastel-on-dark.css"
+    />
+    <link rel="stylesheet" href="./assets/codemirror/theme/railscasts.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/rubyblue.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/seti.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/shadowfox.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/solarized.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/ssms.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/the-matrix.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/codemirror/theme/tomorrow-night-bright.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/codemirror/theme/tomorrow-night-eighties.css"
+    />
+    <link rel="stylesheet" href="./assets/codemirror/theme/ttcn.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/twilight.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/vibrant-ink.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/xq-dark.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/xq-light.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/yeti.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/yonce.css" />
+    <link rel="stylesheet" href="./assets/codemirror/theme/zenburn.css" />
+    <link href="./assets/codemirror/mode/tiddlywiki/tiddlywiki.css" />
+    <link href="./assets/codemirror/mode/tiki/tiki.css" />
+    <!-- End Theme CodeMirror -->
+
+    <!-- Start Addon CodeMirror -->
+    <link rel="stylesheet" href="./assets/codemirror/addon/dialog/dialog.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/codemirror/addon/display/fullscreen.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/codemirror/addon/fold/foldgutter.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/codemirror/addon/hint/show-hint.css"
+    />
+    <link rel="stylesheet" href="./assets/codemirror/addon/lint/lint.css" />
+    <link rel="stylesheet" href="./assets/codemirror/addon/merge/merge.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/codemirror/addon/scroll/simplescrollbars.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/codemirror/addon/search/matchesonscrollbar.css"
+    />
+    <link rel="stylesheet" href="./assets/codemirror/addon/tern/tern.css" />
+    <!-- End Addon CodeMirror -->
+
+    <!-- Start Font Awesome -->
+    <link rel="stylesheet" href="./assets/FontAwesome/css/all.min.css" />
+    <!-- End Font Awesome -->
+
+    <!-- Start Custom Css -->
+    <link rel="stylesheet" href="./assets/CustomCssJs/Style.css" />
+    <!-- End Custom Css -->
+  </head>
+
+  <body>
+    <section id="app">
+      <section class="section_menu_editor_code">
+        <span
+          class="text_section_menu_editor_code text_file_section_menu_editor_code"
+          >File</span
+        >
+
+        <span
+          class="text_section_menu_editor_code text_edit_section_menu_editor_code"
+          >Edit</span
+        >
+
+        <span
+          class="text_section_menu_editor_code text_templates_section_menu_editor_code"
+          >Templates</span
+        >
+
+        <span
+          class="text_section_menu_editor_code text_view_section_menu_editor_code"
+          >View</span
+        >
+
+        <span
+          class="text_section_menu_editor_code text_code_section_menu_editor_code"
+          >Code</span
+        >
+
+        <span
+          class="text_section_menu_editor_code text_key_map_section_menu_editor_code"
+          >Key Map</span
+        >
+
+        <span
+          class="text_section_menu_editor_code text_language_app_section_menu_editor_code"
+          >Language App</span
+        >
+
+        <span
+          class="text_section_menu_editor_code text_theme_section_menu_editor_code"
+          >Theme</span
+        >
+
+        <span
+          class="text_section_menu_editor_code text_help_section_menu_editor_code"
+          >Help</span
+        >
+
+        <section class="section_file_menu_editor_code">
+          <section
+            class="section_inner_file_menu_editor_code button_new_file_menu"
+          >
+            <img
+              src="./Assets/Icons/New.png"
+              alt="New File"
+              class="image_section_inner_file_menu_editor_code"
+            />
+
+            <p class="text_section_inner_file_menu_editor_code">New File</p>
+          </section>
+        </section>
+
+        <section class="section_edit_menu_editor_code">
+          <section class="section_inner_edit_menu_editor_code button_undo_menu">
+            <img
+              src="./Assets/Icons/Undo.png"
+              alt="Undo"
+              class="image_section_inner_edit_menu_editor_code"
+            />
+
+            <p class="text_section_inner_edit_menu_editor_code">Undo</p>
+          </section>
+
+          <section class="section_inner_edit_menu_editor_code button_redo_menu">
+            <img
+              src="./Assets/Icons/Redo.png"
+              alt="Redo"
+              class="image_section_inner_edit_menu_editor_code"
+            />
+
+            <p class="text_section_inner_edit_menu_editor_code">Redo</p>
+          </section>
+
+          <section class="section_inner_edit_menu_editor_code button_cut_menu">
+            <img
+              src="./Assets/Icons/Cut.png"
+              alt="Cut"
+              class="image_section_inner_edit_menu_editor_code"
+            />
+
+            <p class="text_section_inner_edit_menu_editor_code">Cut</p>
+          </section>
+
+          <section class="section_inner_edit_menu_editor_code button_copy_menu">
+            <img
+              src="./Assets/Icons/Copy.png"
+              alt="Copy"
+              class="image_section_inner_edit_menu_editor_code"
+            />
+
+            <p class="text_section_inner_edit_menu_editor_code">Copy</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_paste_menu"
+          >
+            <img
+              src="./Assets/Icons/Paste.png"
+              alt="Paste"
+              class="image_section_inner_edit_menu_editor_code"
+            />
+
+            <p class="text_section_inner_edit_menu_editor_code">Paste</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_delete_menu"
+          >
+            <img
+              src="./Assets/Icons/Delete.png"
+              alt="Delete"
+              class="image_section_inner_edit_menu_editor_code"
+            />
+
+            <p class="text_section_inner_edit_menu_editor_code">Delete</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_duplicate_menu"
+          >
+            <img
+              src="./Assets/Icons/Duplicate.png"
+              alt="Duplicate"
+              class="image_section_inner_edit_menu_editor_code"
+            />
+
+            <p class="text_section_inner_edit_menu_editor_code">Duplicate</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_search_with_google_menu"
+          >
+            <img
+              src="./Assets/Icons/SearchWithGoogle.png"
+              alt="Search With Google"
+              class="image_section_inner_edit_menu_editor_code"
+            />
+
+            <p class="text_section_inner_edit_menu_editor_code">
+              Search With Google
+            </p>
+          </section>
+
+          <section class="section_inner_edit_menu_editor_code button_find_menu">
+            <img
+              src="./Assets/Icons/Find.png"
+              alt="Find"
+              class="image_section_inner_edit_menu_editor_code"
+            />
+
+            <p class="text_section_inner_edit_menu_editor_code">Find</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_find_next_menu"
+          >
+            <img
+              src="./Assets/Icons/ArrowRightFind.png"
+              alt="Find Next"
+              class="image_section_inner_edit_menu_editor_code"
+            />
+
+            <p class="text_section_inner_edit_menu_editor_code">Find Next</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_find_prev_menu"
+          >
+            <img
+              src="./Assets/Icons/ArrowLeftFind.png"
+              alt="Find Prev"
+              class="image_section_inner_edit_menu_editor_code"
+            />
+
+            <p class="text_section_inner_edit_menu_editor_code">Find Prev</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_replace_menu"
+          >
+            <img
+              src="./Assets/Icons/Replace.png"
+              alt="Replace"
+              class="image_section_inner_edit_menu_editor_code"
+            />
+
+            <p class="text_section_inner_edit_menu_editor_code">Replace</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_replace_all_menu"
+          >
+            <img
+              src="./Assets/Icons/ReplaceAll.png"
+              alt="Replace All"
+              class="image_section_inner_edit_menu_editor_code"
+            />
+
+            <p class="text_section_inner_edit_menu_editor_code">Replace All</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_select_all_menu"
+          >
+            <img
+              src="./Assets/Icons/SelectAll.png"
+              alt="Select All"
+              class="image_section_inner_edit_menu_editor_code"
+            />
+
+            <p class="text_section_inner_edit_menu_editor_code">Select All</p>
+          </section>
+        </section>
+
+        <section class="section_templates_menu_editor_code">
+          <section
+            class="section_inner_edit_menu_editor_code button_create_template_html_menu"
+          >
+            <img
+              src="./Assets/Icons/html.png"
+              alt="HTML"
+              class="image_section_inner_templates_menu_editor_code"
+            />
+
+            <p class="text_section_inner_templates_menu_editor_code">HTML</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_create_template_css_menu"
+          >
+            <img
+              src="./Assets/Icons/Css.png"
+              alt="Css"
+              class="image_section_inner_templates_menu_editor_code"
+            />
+
+            <p class="text_section_inner_templates_menu_editor_code">Css</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_create_template_java_script_menu"
+          >
+            <img
+              src="./Assets/Icons/JavaScript.png"
+              alt="JavaScript"
+              class="image_section_inner_templates_menu_editor_code"
+            />
+
+            <p class="text_section_inner_templates_menu_editor_code">
+              JavaScript
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_create_template_sql_menu"
+          >
+            <img
+              src="./Assets/Icons/sql.png"
+              alt="sql"
+              class="image_section_inner_templates_menu_editor_code"
+            />
+
+            <p class="text_section_inner_templates_menu_editor_code">sql</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_create_template_sass_menu"
+          >
+            <img
+              src="./Assets/Icons/Sass.png"
+              alt="Sass"
+              class="image_section_inner_templates_menu_editor_code"
+            />
+
+            <p class="text_section_inner_templates_menu_editor_code">Sass</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_create_template_php_menu"
+          >
+            <img
+              src="./Assets/Icons/Php.png"
+              alt="Php"
+              class="image_section_inner_templates_menu_editor_code"
+            />
+
+            <p class="text_section_inner_templates_menu_editor_code">Php</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_create_template_python_menu"
+          >
+            <img
+              src="./Assets/Icons/Python.png"
+              alt="Python"
+              class="image_section_inner_templates_menu_editor_code"
+            />
+
+            <p class="text_section_inner_templates_menu_editor_code">Python</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_create_template_cpp_menu"
+          >
+            <img
+              src="./Assets/Icons/Cpp.png"
+              alt="Cpp"
+              class="image_section_inner_templates_menu_editor_code"
+            />
+
+            <p class="text_section_inner_templates_menu_editor_code">Cpp</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_create_template_c_sharp_menu"
+          >
+            <img
+              src="./Assets/Icons/cs.png"
+              alt="C Sharp"
+              class="image_section_inner_templates_menu_editor_code"
+            />
+
+            <p class="text_section_inner_templates_menu_editor_code">C Sharp</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_create_template_kivy_menu"
+          >
+            <img
+              src="./Assets/Icons/kivy.png"
+              alt="Kivy"
+              class="image_section_inner_templates_menu_editor_code"
+            />
+
+            <p class="text_section_inner_templates_menu_editor_code">Kivy</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_create_template_java_menu"
+          >
+            <img
+              src="./Assets/Icons/Java.png"
+              alt="Java"
+              class="image_section_inner_templates_menu_editor_code"
+            />
+
+            <p class="text_section_inner_templates_menu_editor_code">Java</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_create_template_kotlin_menu"
+          >
+            <img
+              src="./Assets/Icons/Kotlin.png"
+              alt="Kotlin"
+              class="image_section_inner_templates_menu_editor_code"
+            />
+
+            <p class="text_section_inner_templates_menu_editor_code">Kotlin</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_create_template_xml_menu"
+          >
+            <img
+              src="./Assets/Icons/xml.png"
+              alt="Xml"
+              class="image_section_inner_templates_menu_editor_code"
+            />
+
+            <p class="text_section_inner_templates_menu_editor_code">Xml</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_create_template_type_script_menu"
+          >
+            <img
+              src="./Assets/Icons/TypeScript.png"
+              alt="Type Script"
+              class="image_section_inner_templates_menu_editor_code"
+            />
+
+            <p class="text_section_inner_templates_menu_editor_code">
+              Type Script
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_create_template_go_menu"
+          >
+            <img
+              src="./Assets/Icons/Go.png"
+              alt="Go"
+              class="image_section_inner_templates_menu_editor_code"
+            />
+
+            <p class="text_section_inner_templates_menu_editor_code">Go</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_create_template_cython_menu"
+          >
+            <img
+              src="./Assets/Icons/cython.png"
+              alt="cython"
+              class="image_section_inner_templates_menu_editor_code"
+            />
+
+            <p class="text_section_inner_templates_menu_editor_code">cython</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_create_template_d_menu"
+          >
+            <img
+              src="./Assets/Icons/d.png"
+              alt="D"
+              class="image_section_inner_templates_menu_editor_code"
+            />
+
+            <p class="text_section_inner_templates_menu_editor_code">D</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_create_template_diff_menu"
+          >
+            <img
+              src="./Assets/Icons/diff.png"
+              alt="Diff"
+              class="image_section_inner_templates_menu_editor_code"
+            />
+
+            <p class="text_section_inner_templates_menu_editor_code">Diff</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_create_template_live_script_menu"
+          >
+            <img
+              src="./Assets/Icons/LiveScript.png"
+              alt="Live Script"
+              class="image_section_inner_templates_menu_editor_code"
+            />
+
+            <p class="text_section_inner_templates_menu_editor_code">
+              Live Script
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_create_template_lua_menu"
+          >
+            <img
+              src="./Assets/Icons/Lua.png"
+              alt="Lua"
+              class="image_section_inner_templates_menu_editor_code"
+            />
+
+            <p class="text_section_inner_templates_menu_editor_code">Lua</p>
+          </section>
+        </section>
+
+        <section class="section_view_menu_editor_code">
+          <section
+            class="section_inner_edit_menu_editor_code button_status_bar_menu"
+          >
+            <span
+              class="fas fa-check icon_check_status_bar_section_inner_edit_menu_editor_code"
+            ></span>
+
+            <p class="text_section_inner_view_menu_editor_code">Status Bar</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_live_wrapping_menu"
+          >
+            <img
+              src="./Assets/Icons/LineWrapping.png"
+              alt="Line Wrapping"
+              class="image_section_inner_view_menu_editor_code"
+            />
+
+            <p class="text_section_inner_view_menu_editor_code">
+              Line Wrapping
+            </p>
+          </section>
+        </section>
+
+        <section class="section_code_menu_editor_code">
+          <section
+            class="section_inner_edit_menu_editor_code button_format_all_code_menu"
+          >
+            <img
+              src="./Assets/Icons/FormatCode.png"
+              alt="Format All Code"
+              class="image_section_inner_code_menu_editor_code"
+            />
+
+            <p class="text_section_inner_code_menu_editor_code">
+              Format All Code
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_comment_menu"
+          >
+            <img
+              src="./Assets/Icons/Comment.png"
+              alt="Comment"
+              class="image_section_inner_code_menu_editor_code"
+            />
+
+            <p class="text_section_inner_code_menu_editor_code">Comment</p>
+          </section>
+        </section>
+
+        <section class="section_key_map_menu_editor_code">
+          <section
+            class="section_inner_edit_menu_editor_code button_emacs_menu"
+          >
+            <img
+              src="./Assets/Icons/Emacs.png"
+              alt="Emacs"
+              class="image_section_inner_key_map_menu_editor_code"
+            />
+
+            <p class="text_section_inner_key_map_menu_editor_code">Emacs</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_sublime_menu"
+          >
+            <img
+              src="./Assets/Icons/Sublime.png"
+              alt="Sublime"
+              class="image_section_inner_key_map_menu_editor_code"
+            />
+
+            <p class="text_section_inner_key_map_menu_editor_code">Sublime</p>
+          </section>
+
+          <section class="section_inner_edit_menu_editor_code button_vim_menu">
+            <img
+              src="./Assets/Icons/Vim.png"
+              alt="Vim"
+              class="image_section_inner_key_map_menu_editor_code"
+            />
+
+            <p class="text_section_inner_key_map_menu_editor_code">Vim</p>
+          </section>
+        </section>
+
+        <section class="section_language_app_menu_editor_code">
+          <section
+            class="section_inner_edit_menu_editor_code button_set_language_chinese_menu"
+          >
+            <img
+              src="./Assets/Icons/Chinese.png"
+              alt="Language Chinese"
+              class="image_section_inner_language_app_menu_editor_code"
+            />
+
+            <p class="text_section_inner_language_app_menu_editor_code">
+              Language Chinese
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_language_spanish_menu"
+          >
+            <img
+              src="./Assets/Icons/Spanish.png"
+              alt="Language Spanish"
+              class="image_section_inner_language_app_menu_editor_code"
+            />
+
+            <p class="text_section_inner_language_app_menu_editor_code">
+              Language Spanish
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_language_english_menu"
+          >
+            <img
+              src="./Assets/Icons/English.png"
+              alt="Language English"
+              class="image_section_inner_language_app_menu_editor_code"
+            />
+
+            <p class="text_section_inner_language_app_menu_editor_code">
+              Language English
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_language_hindi_menu"
+          >
+            <img
+              src="./Assets/Icons/Hindi.png"
+              alt="Language Hindi"
+              class="image_section_inner_language_app_menu_editor_code"
+            />
+
+            <p class="text_section_inner_language_app_menu_editor_code">
+              Language Hindi
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_language_arabic_menu"
+          >
+            <img
+              src="./Assets/Icons/Arabic.png"
+              alt="Language Arabic"
+              class="image_section_inner_language_app_menu_editor_code"
+            />
+
+            <p class="text_section_inner_language_app_menu_editor_code">
+              Language Arabic
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_language_persian_menu"
+          >
+            <img
+              src="./Assets/Icons/Persian.png"
+              alt="Language Persian"
+              class="image_section_inner_language_app_menu_editor_code"
+            />
+
+            <p class="text_section_inner_language_app_menu_editor_code">
+              Language Persian
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_language_german_menu"
+          >
+            <img
+              src="./Assets/Icons/German.png"
+              alt="Language German"
+              class="image_section_inner_language_app_menu_editor_code"
+            />
+
+            <p class="text_section_inner_language_app_menu_editor_code">
+              Language German
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_language_french_menu"
+          >
+            <img
+              src="./Assets/Icons/French.png"
+              alt="Language French"
+              class="image_section_inner_language_app_menu_editor_code"
+            />
+
+            <p class="text_section_inner_language_app_menu_editor_code">
+              Language French
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_language_portuguese_menu"
+          >
+            <img
+              src="./Assets/Icons/Portuguese.png"
+              alt="Language Portuguese"
+              class="image_section_inner_language_app_menu_editor_code"
+            />
+
+            <p class="text_section_inner_language_app_menu_editor_code">
+              Language Portuguese
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_language_russian_menu"
+          >
+            <img
+              src="./Assets/Icons/Russian.png"
+              alt="Language Russian"
+              class="image_section_inner_language_app_menu_editor_code"
+            />
+
+            <p class="text_section_inner_language_app_menu_editor_code">
+              Language Russian
+            </p>
+          </section>
+        </section>
+
+        <section class="section_theme_menu_editor_code">
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_day_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Day</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_night_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Night</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_abbott_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Abbott</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_abcdef_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">ABCDef</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_ambiance_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Ambiance</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_ambiance_mobile_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">
+              Ambiance Mobile
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_ayu_dark_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Ayu Dark</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_ayu_mirage_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Ayu Mirage</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_base_dark_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Base Dark</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_base_light_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Base Light</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_bespin_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Bespin</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_black_board_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Black Board</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_cobalt_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Cobalt</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_color_forth_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Color Forth</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_darcula_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Darcula</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_dracula_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Dracula</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_duotone_dark_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">
+              Duotone Dark
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_duotone_light_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">
+              Duotone Light
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_eclipse_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Eclipse</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_elegant_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Elegant</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_erlang_dark_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Erlang Dark</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_gruvbox_dark_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">
+              Gruvbox Dark
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_hopscotch_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Hopscotch</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_icecoder_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Icecoder</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_idea_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Idea</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_isotope_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Isotope</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_lesser_dark_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Lesser Dark</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_liqui_byte_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Liqui Byte</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_lucario_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Lucario</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_material_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Material</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_material_darker_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">
+              Material Darker
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_material_ocean_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">
+              Material Ocean
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_material_palenight_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">
+              Material Palenight
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_mbo_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Mbo</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_mdn_like_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Mdn Like</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_midnight_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Midnight</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_monokai_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Monokai</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_moxer_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Moxer</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_neat_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Neat</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_neo_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Neo</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_nord_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Nord</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_panda_syntax_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">
+              Panda Syntax
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_paraiso_dark_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">
+              Paraiso Dark
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_paraiso_light_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">
+              Paraiso Light
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_pastel_on_dark_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">
+              Pastel On Dark
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_railscasts_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Railscasts</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_rubyblue_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Rubyblue</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_seti_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Seti</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_shadow_fox_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Shadow Fox</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_solarized_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Solarized</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_ssms_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Ssms</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_matrix_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Matrix</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_tomorrow_night_bright_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">
+              Tomorrow Night Bright
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_tomorrow_night_eighties_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">
+              Tomorrow Night Eighties
+            </p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_ttcn_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Ttcn</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_twilight_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Twilight</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_vibrant_ink_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Vibrant Ink</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_xq_dark_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Xq Dark</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_xq_light_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Xq Light</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_yeti_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Yeti</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_yonce_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Yonce</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_set_theme_zenburn_menu"
+          >
+            <p class="text_section_inner_theme_menu_editor_code">Zenburn</p>
+          </section>
+        </section>
+
+        <section class="section_help_menu_editor_code">
+          <section
+            class="section_inner_edit_menu_editor_code button_about_menu"
+          >
+            <img
+              src="./Assets/Images/icon.png"
+              alt="About"
+              class="image_section_inner_help_menu_editor_code"
+            />
+
+            <p class="text_section_inner_help_menu_editor_code">About</p>
+          </section>
+
+          <section
+            class="section_inner_edit_menu_editor_code button_donate_menu"
+          >
+            <img
+              src="./Assets/Icons/Donate.png"
+              alt="Donate"
+              class="image_section_inner_help_menu_editor_code"
+            />
+
+            <p class="text_section_inner_help_menu_editor_code">Donate</p>
+          </section>
+        </section>
+      </section>
+
+      <section id="section-header-editor"></section>
+
+      <section class="sect-editor">
+        <div id="editor"></div>
+      </section>
+
+      <section id="status_bar">
+        <section class="div_status_bar name-file">
+          <div>File Name :</div>
+          <div id="fileName"></div>
+        </section>
+
+        <section class="div_status_bar mode-file">
+          <div>Mode :</div>
+          <div id="modeFile"></div>
+        </section>
+
+        <section class="div_status_bar line-col">
+          <div>Line / Column :</div>
+          <div id="lineColumn"></div>
+        </section>
+
+        <section class="div_status_bar lock">
+          <div>
+            <i
+              class="lock-status-bar-lock fas fa-lock-alt"
+              title="Lock Page Opening"
+            ></i>
+            <i
+              class="lock-status-bar-open fas fa-lock-open"
+              title="Locking Page"
+            ></i>
+          </div>
+        </section>
+
+        <section class="sect-set-mode-file" title="Set Mode File">
+          <select id="select-mode-file">
+            <option value="None" selected>Auto Set Mode File</option>
+            <option value="apl">APL</option>
+            <option value="asn1">ASN.1</option>
+            <option value="ael">Asterisk dialplan</option>
+            <option value="bf">Brainfuck</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="cs">C#</option>
+            <option value="jar">Java</option>
+            <option value="squirrel">Kotlin</option>
+            <option value="squirrel">squirrel</option>
+            <option value="ceylon">Ceylon</option>
+            <option value="clj">Clojure</option>
+            <option value="edn">Closure Stylesheets (GSS)</option>
+            <option value="cmake">CMake</option>
+            <option value="coffee">CoffeeScript</option>
+            <option value="lisp">Common Lisp</option>
+            <option value="rpt">Crystal</option>
+            <option value="css">CSS</option>
+            <option value="cypher">Cypher</option>
+            <option value="pyx">Cython</option>
+            <option value="d">D</option>
+            <option value="dart">Dart</option>
+            <option value="djt">Django</option>
+            <option value="dockerfile">Dockerfile</option>
+            <option value="diff">diff</option>
+            <option value="dtd">DTD</option>
+            <option value="lid">Dylan</option>
+            <option value="ecl">ECL</option>
+            <option value="e">Eiffel</option>
+            <option value="elm">Elm</option>
+            <option value="erl">Erlang</option>
+            <option value="factor">Factor</option>
+            <option value="fcl">FCL</option>
+            <option value="f">Forth</option>
+            <option value="4th">Fortran</option>
+            <option value="fs">F#</option>
+            <option value="s">Gas</option>
+            <option value="feature">Gherkin</option>
+            <option value="go">Go</option>
+            <option value="groovy">Groovy</option>
+            <option value="haml">HAML</option>
+            <option value="hbs">Handlebars</option>
+            <option value="hs">Haskell</option>
+            <option value="hx">Haxe</option>
+            <option value="hxml">HXML</option>
+            <option value="http">HTTP</option>
+            <option value="idl">IDL</option>
+            <option value="jar">Java</option>
+            <option value="js">JavaScript</option>
+            <option value="jl">Julia</option>
+            <option value="less">LESS</option>
+            <option value="ls">LiveScript</option>
+            <option value="lua">Lua</option>
+            <option value="md">Markdown</option>
+            <option value="m">Mathematica</option>
+            <option value="mbox">mbox</option>
+            <option value="mrc">mIRC</option>
+            <option value="mo">Modelica</option>
+            <option value="mscgen">MscGen</option>
+            <option value="nginx">Nginx</option>
+            <option value="nsi">NSIS</option>
+            <option value="pl">N-Triples/N-Quads</option>
+            <option value="h">Objective C</option>
+            <option value="cmi">OCaml</option>
+            <option value="m">Octave (MATLAB)</option>
+            <option value="oz">Oz</option>
+            <option value="p">Pascal</option>
+            <option value="perl">Perl</option>
+            <option value="asc">PGP (ASCII armor)</option>
+            <option value="php">PHP</option>
+            <option value="pig">Pig Latin</option>
+            <option value="ps1">PowerShell 1</option>
+            <option value="ps2">PowerShell 2</option>
+            <option value="ps3">PowerShell 3</option>
+            <option value="properties">Properties files</option>
+            <option value="proto">ProtoBuf</option>
+            <option value="pug">Pug</option>
+            <option value="puppet">Puppet</option>
+            <option value="py">Python</option>
+            <option value="q">Q</option>
+            <option value="r">R</option>
+            <option value="spec">RPM</option>
+            <option value="rst">reStructuredText</option>
+            <option value="rb">Ruby</option>
+            <option value="rs">Rust</option>
+            <option value="sas">SAS</option>
+            <option value="sass">Sass</option>
+            <option value="xlsm">Spreadsheet</option>
+            <option value="scm">Scheme</option>
+            <option value="scss">SCSS</option>
+            <option value="sh">Shell</option>
+            <option value="sieve">Sieve</option>
+            <option value="slim">Slim</option>
+            <option value="smalltalk">Smalltalk</option>
+            <option value="tpl">Smarty</option>
+            <option value="solr">Solr</option>
+            <option value="soy">Soy</option>
+            <option value="styl">Stylus</option>
+            <option value="sql">SQL</option>
+            <option value="sparql">SPARQL</option>
+            <option value="swift">Swift</option>
+            <option value="stex">sTeX, LaTeX</option>
+            <option value="tcl">Tcl</option>
+            <option value="textile">Textile</option>
+            <option value="tid">Tiddlywiki</option>
+            <option value="tid">Tiki wiki</option>
+            <option value="toml">TOML</option>
+            <option value="tornado">Tornado</option>
+            <option value="troff">troff</option>
+            <option value="ttcn">TTCN</option>
+            <option value="ttcn3">TTCN 3</option>
+            <option value="ttcnpp">TTCN Configuration</option>
+            <option value="turtle">Turtle</option>
+            <option value="vb">VB.NET</option>
+            <option value="vbs">VBScript</option>
+            <option value="vm">Velocity</option>
+            <option value="vm">Verilog/SystemVerilog</option>
+            <option value="vhd">VHDL</option>
+            <option value="vue">Vue</option>
+            <option value="webidl">Web IDL</option>
+            <option value="wasm">WebAssembly Text Format</option>
+            <option value="xml">XML</option>
+            <option value="html">HTML</option>
+            <option value="htm">HTM</option>
+            <option value="xquery">XQuery</option>
+            <option value="yacas">Yacas</option>
+            <option value="yaml">YAML</option>
+            <option value="yaml">YAML frontmatter</option>
+            <option value="z80">Z80</option>
+          </select>
+        </section>
+      </section>
+    </section>
+  </body>
+
+  <section>
+    <!-- Start Mode CodeMirror -->
+    <script src="./assets/codemirror/lib/codemirror.js"></script>
+    <script src="./assets/codemirror/mode/asn.1/asn.1.js"></script>
+    <script src="./assets/codemirror/mode/apl/apl.js"></script>
+    <script src="./assets/codemirror/mode/asciiarmor/asciiarmor.js"></script>
+    <script src="./assets/codemirror/mode/asterisk/asterisk.js"></script>
+    <script src="./assets/codemirror/mode/brainfuck/brainfuck.js"></script>
+    <script src="./assets/codemirror/mode/clike/clike.js"></script>
+    <script src="./assets/codemirror/mode/clojure/clojure.js"></script>
+    <script src="./assets/codemirror/mode/cmake/cmake.js"></script>
+    <script src="./assets/codemirror/mode/cobol/cobol.js"></script>
+    <script src="./assets/codemirror/mode/coffeescript/coffeescript.js"></script>
+    <script src="./assets/codemirror/mode/commonlisp/commonlisp.js"></script>
+    <script src="./assets/codemirror/mode/crystal/crystal.js"></script>
+    <script src="./assets/codemirror/mode/css/css.js"></script>
+    <script src="./assets/codemirror/mode/cypher/cypher.js"></script>
+    <script src="./assets/codemirror/mode/d/d.js"></script>
+    <script src="./assets/codemirror/mode/dart/dart.js"></script>
+    <script src="./assets/codemirror/mode/diff/diff.js"></script>
+    <script src="./assets/codemirror/mode/django/django.js"></script>
+    <script src="./assets/codemirror/mode/dtd/dtd.js"></script>
+    <script src="./assets/codemirror/mode/dylan/dylan.js"></script>
+    <script src="./assets/codemirror/mode/ebnf/ebnf.js"></script>
+    <script src="./assets/codemirror/mode/ecl/ecl.js"></script>
+    <script src="./assets/codemirror/mode/eiffel/eiffel.js"></script>
+    <script src="./assets/codemirror/mode/elm/elm.js"></script>
+    <script src="./assets/codemirror/mode/erlang/erlang.js"></script>
+    <script src="./assets/codemirror/mode/fcl/fcl.js"></script>
+    <script src="./assets/codemirror/mode/forth/forth.js"></script>
+    <script src="./assets/codemirror/mode/fortran/fortran.js"></script>
+    <script src="./assets/codemirror/mode/gas/gas.js"></script>
+    <script src="./assets/codemirror/mode/gfm/gfm.js"></script>
+    <script src="./assets/codemirror/mode/gherkin/gherkin.js"></script>
+    <script src="./assets/codemirror/mode/go/go.js"></script>
+    <script src="./assets/codemirror/mode/groovy/groovy.js"></script>
+    <script src="./assets/codemirror/mode/haml/haml.js"></script>
+    <script src="./assets/codemirror/mode/haskell/haskell.js"></script>
+    <script src="./assets/codemirror/mode/haskell-literate/haskell-literate.js"></script>
+    <script src="./assets/codemirror/mode/haxe/haxe.js"></script>
+    <script src="./assets/codemirror/mode/htmlembedded/htmlembedded.js"></script>
+    <script src="./assets/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="./assets/codemirror/mode/http/http.js"></script>
+    <script src="./assets/codemirror/mode/idl/idl.js"></script>
+    <script src="./assets/codemirror/mode/javascript/javascript.js"></script>
+    <script src="./assets/codemirror/mode/jinja2/jinja2.js"></script>
+    <script src="./assets/codemirror/mode/jsx/jsx.js"></script>
+    <script src="./assets/codemirror/mode/julia/julia.js"></script>
+    <script src="./assets/codemirror/mode/livescript/livescript.js"></script>
+    <script src="./assets/codemirror/mode/lua/lua.js"></script>
+    <script src="./assets/codemirror/mode/markdown/markdown.js"></script>
+    <script src="./assets/codemirror/mode/mathematica/mathematica.js"></script>
+    <script src="./assets/codemirror/mode/mbox/mbox.js"></script>
+    <script src="./assets/codemirror/mode/mirc/mirc.js"></script>
+    <script src="./assets/codemirror/mode/mllike/mllike.js"></script>
+    <script src="./assets/codemirror/mode/modelica/modelica.js"></script>
+    <script src="./assets/codemirror/mode/mscgen/mscgen.js"></script>
+    <script src="./assets/codemirror/mode/mumps/mumps.js"></script>
+    <script src="./assets/codemirror/mode/nginx/nginx.js"></script>
+    <script src="./assets/codemirror/mode/ntriples/ntriples.js"></script>
+    <script src="./assets/codemirror/mode/octave/octave.js"></script>
+    <script src="./assets/codemirror/mode/oz/oz.js"></script>
+    <script src="./assets/codemirror/mode/pascal/pascal.js"></script>
+    <script src="./assets/codemirror/mode/pegjs/pegjs.js"></script>
+    <script src="./assets/codemirror/mode/perl/perl.js"></script>
+    <script src="./assets/codemirror/mode/php/php.js"></script>
+    <script src="./assets/codemirror/mode/pig/pig.js"></script>
+    <script src="./assets/codemirror/mode/powershell/powershell.js"></script>
+    <script src="./assets/codemirror/mode/protobuf/protobuf.js"></script>
+    <script src="./assets/codemirror/mode/properties/properties.js"></script>
+    <script src="./assets/codemirror/mode/pug/pug.js"></script>
+    <script src="./assets/codemirror/mode/puppet/puppet.js"></script>
+    <script src="./assets/codemirror/mode/python/python.js"></script>
+    <script src="./assets/codemirror/mode/q/q.js"></script>
+    <script src="./assets/codemirror/mode/r/r.js"></script>
+    <script src="./assets/codemirror/mode/rpm/rpm.js"></script>
+    <script src="./assets/codemirror/mode/rst/rst.js"></script>
+    <script src="./assets/codemirror/mode/ruby/ruby.js"></script>
+    <script src="./assets/codemirror/mode/sas/sas.js"></script>
+    <script src="./assets/codemirror/mode/sass/sass.js"></script>
+    <script src="./assets/codemirror/mode/scheme/scheme.js"></script>
+    <script src="./assets/codemirror/mode/shell/shell.js"></script>
+    <script src="./assets/codemirror/mode/sieve/sieve.js"></script>
+    <script src="./assets/codemirror/mode/slim/slim.js"></script>
+    <script src="./assets/codemirror/mode/smalltalk/smalltalk.js"></script>
+    <script src="./assets/codemirror/mode/smarty/smarty.js"></script>
+    <script src="./assets/codemirror/mode/solr/solr.js"></script>
+    <script src="./assets/codemirror/mode/soy/soy.js"></script>
+    <script src="./assets/codemirror/mode/sparql/sparql.js"></script>
+    <script src="./assets/codemirror/mode/spreadsheet/spreadsheet.js"></script>
+    <script src="./assets/codemirror/mode/sql/sql.js"></script>
+    <script src="./assets/codemirror/mode/stex/stex.js"></script>
+    <script src="./assets/codemirror/mode/stylus/stylus.js"></script>
+    <script src="./assets/codemirror/mode/swift/swift.js"></script>
+    <script src="./assets/codemirror/mode/tcl/tcl.js"></script>
+    <script src="./assets/codemirror/mode/textile/textile.js"></script>
+    <script src="./assets/codemirror/mode/tiddlywiki/tiddlywiki.js"></script>
+    <script src="./assets/codemirror/mode/tiki/tiki.js"></script>
+    <script src="./assets/codemirror/mode/toml/toml.js"></script>
+    <script src="./assets/codemirror/mode/tornado/tornado.js"></script>
+    <script src="./assets/codemirror/mode/troff/troff.js"></script>
+    <script src="./assets/codemirror/mode/ttcn/ttcn.js"></script>
+    <script src="./assets/codemirror/mode/ttcn-cfg/ttcn-cfg.js"></script>
+    <script src="./assets/codemirror/mode/turtle/turtle.js"></script>
+    <script src="./assets/codemirror/mode/twig/twig.js"></script>
+    <script src="./assets/codemirror/mode/vb/vb.js"></script>
+    <script src="./assets/codemirror/mode/vbscript/vbscript.js"></script>
+    <script src="./assets/codemirror/mode/velocity/velocity.js"></script>
+    <script src="./assets/codemirror/mode/verilog/verilog.js"></script>
+    <script src="./assets/codemirror/mode/vhdl/vhdl.js"></script>
+    <script src="./assets/codemirror/mode/vue/vue.js"></script>
+    <script src="./assets/codemirror/mode/webidl/webidl.js"></script>
+    <script src="./assets/codemirror/mode/xml/xml.js"></script>
+    <script src="./assets/codemirror/mode/xquery/xquery.js"></script>
+    <script src="./assets/codemirror/mode/yacas/yacas.js"></script>
+    <script src="./assets/codemirror/mode/yaml/yaml.js"></script>
+    <script src="./assets/codemirror/mode/yaml-frontmatter/yaml-frontmatter.js"></script>
+    <script src="./assets/codemirror/mode/z80/z80.js"></script>
+    <script src="./assets/codemirror/mode/meta.js"></script>
+    <!-- End Mode CodeMirror -->
+
+    <!-- Start KeyMap CodeMirror -->
+    <script src="./assets/codemirror/keymap/emacs.js"></script>
+    <script src="./assets/codemirror/keymap/sublime.js"></script>
+    <script src="./assets/codemirror/keymap/vim.js"></script>
+    <!-- End KeyMap CodeMirror -->
+
+    <!-- Start Addon CodeMirror -->
+    <script src="./assets/codemirror/addon/comment/comment.js"></script>
+    <script src="./assets/codemirror/addon/comment/continuecomment.js"></script>
+    <script src="./assets/codemirror/addon/dialog/dialog.js"></script>
+    <script src="./assets/codemirror/addon/display/autorefresh.js"></script>
+    <script src="./assets/codemirror/addon/display/fullscreen.js"></script>
+    <script src="./assets/codemirror/addon/display/panel.js"></script>
+    <script src="./assets/codemirror/addon/display/placeholder.js"></script>
+    <script src="./assets/codemirror/addon/display/rulers.js"></script>
+    <script src="./assets/codemirror/addon/edit/closebrackets.js"></script>
+    <script src="./assets/codemirror/addon/edit/closetag.js"></script>
+    <script src="./assets/codemirror/addon/edit/continuelist.js"></script>
+    <script src="./assets/codemirror/addon/edit/matchbrackets.js"></script>
+    <script src="./assets/codemirror/addon/edit/trailingspace.js"></script>
+    <script src="./assets/codemirror/addon/edit/matchtags.js"></script>
+    <script src="./assets/codemirror/addon/fold/brace-fold.js"></script>
+    <script src="./assets/codemirror/addon/fold/comment-fold.js"></script>
+    <script src="./assets/codemirror/addon/fold/foldcode.js"></script>
+    <script src="./assets/codemirror/addon/fold/foldgutter.js"></script>
+    <script src="./assets/codemirror/addon/fold/indent-fold.js"></script>
+    <script src="./assets/codemirror/addon/fold/markdown-fold.js"></script>
+    <script src="./assets/codemirror/addon/fold/xml-fold.js"></script>
+    <script src="./assets/codemirror/addon/format/formatting.js"></script>
+    <script src="./assets/codemirror/addon/hint/anyword-hint.js"></script>
+    <script src="./assets/codemirror/addon/hint/css-hint.js"></script>
+    <script src="./assets/codemirror/addon/hint/html-hint.js"></script>
+    <script src="./assets/codemirror/addon/hint/javascript-hint.js"></script>
+    <script src="./assets/codemirror/addon/hint/show-hint.js"></script>
+    <script src="./assets/codemirror/addon/hint/sql-hint.js"></script>
+    <script src="./assets/codemirror/addon/hint/xml-hint.js"></script>
+    <script src="./assets/codemirror/addon/lint/coffeescript-lint.js"></script>
+    <script src="./assets/codemirror/addon/lint/css-lint.js"></script>
+    <script src="./assets/codemirror/addon/lint/html-lint.js"></script>
+    <script src="./assets/codemirror/addon/lint/javascript-lint.js"></script>
+    <script src="./assets/codemirror/addon/lint/json-lint.js"></script>
+    <script src="./assets/codemirror/addon/lint/lint.js"></script>
+    <script src="./assets/codemirror/addon/lint/yaml-lint.js"></script>
+    <script src="./assets/codemirror/addon/merge/merge.js"></script>
+    <script src="./assets/codemirror/addon/mode/loadmode.js"></script>
+    <script src="./assets/codemirror/addon/mode/multiplex.js"></script>
+    <script src="./assets/codemirror/addon/mode/overlay.js"></script>
+    <script src="./assets/codemirror/addon/mode/simple.js"></script>
+    <script src="./assets/codemirror/addon/runmode/colorize.js"></script>
+    <script src="./assets/codemirror/addon/runmode/runmode.js"></script>
+    <script src="./assets/codemirror/addon/scroll/annotatescrollbar.js"></script>
+    <script src="./assets/codemirror/addon/scroll/scrollpastend.js"></script>
+    <script src="./assets/codemirror/addon/scroll/simplescrollbars.js"></script>
+    <script src="./assets/codemirror/addon/search/jump-to-line.js"></script>
+    <script src="./assets/codemirror/addon/search/match-highlighter.js"></script>
+    <script src="./assets/codemirror/addon/search/matchesonscrollbar.js"></script>
+    <script src="./assets/codemirror/addon/search/search.js"></script>
+    <script src="./assets/codemirror/addon/search/searchcursor.js"></script>
+    <script src="./assets/codemirror/addon/selection/active-line.js"></script>
+    <script src="./assets/codemirror/addon/selection/mark-selection.js"></script>
+    <script src="./assets/codemirror/addon/selection/selection-pointer.js"></script>
+    <script src="./assets/codemirror/addon/tern/tern.js"></script>
+    <script src="./assets/codemirror/addon/wrap/hardwrap.js"></script>
+    <!-- End Addon CodeMirror -->
+
+    <!-- Start Custom Js -->
+    <script src="./assets/CustomCssJs/Script.js"></script>
+    <!-- End Custom Js -->
+  </section>
+</html>
