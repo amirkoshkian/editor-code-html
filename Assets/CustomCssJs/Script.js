@@ -134,9 +134,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let ButtonSetLanguageHindiMenu = document.querySelector(
     ".button_set_language_hindi_menu"
   );
-  let ButtonSetLanguageArabicMenu = document.querySelector(
-    ".button_set_language_arabic_menu"
-  );
   let ButtonSetLanguagePersianMenu = document.querySelector(
     ".button_set_language_persian_menu"
   );
@@ -574,14 +571,6 @@ document.addEventListener("DOMContentLoaded", () => {
     StatusBarForLockLock.setAttribute("title", "लॉक पेज ओपनिंग");
     StatusBarForLockOpen.setAttribute("title", "लॉकिंग पेज");
     StatusBarForSetModeFile.setAttribute("title", "मोड फ़ाइल सेट करें");
-  });
-  ButtonSetLanguageArabicMenu.addEventListener("click", () => {
-    DivStatusBarForNameFile.innerHTML = "اسم الملف :";
-    DivStatusBarForModeFile.innerHTML = "الوضع :";
-    DivStatusBarForLineCol.innerHTML = "الخط / العمود :";
-    StatusBarForLockLock.setAttribute("title", "فتح قفل الصفحة");
-    StatusBarForLockOpen.setAttribute("title", "تأمين الصفحة");
-    StatusBarForSetModeFile.setAttribute("title", "تعيين ملف الوضع");
   });
   ButtonSetLanguagePersianMenu.addEventListener("click", () => {
     DivStatusBarForNameFile.innerHTML = "نام فایل :";
